@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>LAGS Memory Game</title>
+</head>
+
+<body>
+    <div id="start_cover" class="cover">
+        <div class="brand">
+            <h1><span class="lags">lags</span><span class="devs">Devs</span></h1>
+        </div>
+        <div id="game-difficulty">
+            <select name="" id="game-difficulties">
+                <option value="small">4x4 - Small 1.5 minutes </option>
+                <option value="medium">8x6 - Medium 5 minutes </option>
+                <option value="large">10x7 - Large 10 minutes</option>
+            </select>
+        </div>
+        <div class="btn">
+            <input type="button" value="Start Game" id="startBtn">
+        </div>
+    </div>
+    <div id="memory_game">
+        <div id="timer">
+            <h1 id="time">
+            </h1>
+        </div>
+        <div id="table">
+            <div id="board"></div>
+        </div>
+    </div>
+    <div class="modelBack" id="model">
+        <div class="game_over" id="game_over">
+            <p class="content" id="content">
+                Sorry, your time has ran out. Try Again?
+            </p>
+            <input type="button" value="Yes please" id="yes" class="modelbtn">
+            <input type="button" value="No thanks" id="no" class="modelbtn">
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
